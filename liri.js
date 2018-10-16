@@ -22,6 +22,10 @@ if (process.argv[3] !== undefined) {
     };
 }
 
+if (!title || title.length < 2){
+    title = "Mr. Nobody";
+}
+
 switch (action) {
     // case 'concert-this':
     //     concertThis();
