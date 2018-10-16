@@ -1,21 +1,13 @@
 
 ********************************** MOVIE THIS **********************************
-Title: Lincoln
-Release Year: 2012
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 89%
-Country movie produced in: USA, India
-Language: English
-Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
-Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
-********************************************************************************
-
-********************************** MOVIE THIS **********************************
-OMDB could not find any movies that matched that title.  Please try again.
-********************************************************************************
-
-********************************** MOVIE THIS **********************************
-OMDB could not find any movies that matched that title.  Please try again.
+Title: The Conjuring
+Release Year: 2013
+IMDB Rating: 7.5
+Rotten Tomatoes Rating: 86%
+Country movie produced in: USA
+Language: English, Latin
+Plot: Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.
+Actors: Vera Farmiga, Patrick Wilson, Lili Taylor, Ron Livingston
 ********************************************************************************
 
 ********************************** MOVIE THIS **********************************
@@ -28,43 +20,3 @@ Language: English
 Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
 Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
 ********************************************************************************
-
-********************************** MOVIE THIS **********************************
-Title: Lincoln
-Release Year: 2012
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 89%
-Country movie produced in: USA, India
-Language: English
-Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
-Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
-********************************************************************************
-
-********************************** MOVIE THIS **********************************
-Title: Lincoln
-Release Year: 2012
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 89%
-Country movie produced in: USA, India
-Language: English
-Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
-Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
-********************************************************************************
-
-********************************** MOVIE THIS **********************************
-Title: Lincoln
-Release Year: 2012
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 89%
-Country movie produced in: USA, India
-Language: English
-Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
-Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
-********************************************************************************
-data to appenddata to appenddata to appendfunction (err) {
-                        if (err) throw err;
-                        console.log('Saved!');
-                    }function (err) {
-                        if (err) throw err;
-                        console.log('Saved!');
-                    }

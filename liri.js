@@ -47,17 +47,34 @@ function movie() {
                 if (data.Error == 'Movie not found!') {
                     var noMovie = ("\n**********************************Sorry NO MOVIE**********************************\nOMDB could not find any movies that matched that title.  Please try again.\n********************************************************************************\n");
                     console.log(noMovie)
+                    fs.appendFile("log.txt", noMovie, function (err) {
+                        if (err) {
+                            return console.log("Movie data did not append to log.txt file.");
+                        };
+                    });
                 } else if (!data.Ratings || data.Ratings.length < 2) {
                     var movieAppend = ("\n********************************** MOVIE **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
+                    fs.appendFile("log.txt", movieAppend, function (err) {
+                        if (err) {
+                            return console.log("Movie data did not append to log.txt file.");
+                        };
+                    });
                     return
                 } else if (data.Ratings[1].Value !== undefined) {
                     var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: " + data.Ratings[1].Value + "\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
+                    fs.appendFile("log.txt", movieAppend, function (err) {
+                        if (err) {
+                            return console.log("Movie data did not append to log.txt file.");
+                        };
+                    });
                 };
             };
         };
 
     });
 }
+
+
 
