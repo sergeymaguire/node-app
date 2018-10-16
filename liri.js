@@ -7,9 +7,14 @@ helpMenu();
 var request = require("request"),
     fs = require("fs"),
     keys = require("./keys.js"),
+    Spotify = require('node-spotify-api'),
     infoInput = process.argv,
     action = process.argv[2],
-    title = "";
+    title = "",
+    artist = "";
+
+    //BANDS IN TOWN URLLLLL
+    //"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
 if (!action || !infoInput || !infoInput.length) {
     helpMenu();
@@ -27,22 +32,22 @@ if (!title || title.length < 2){
 }
 
 switch (action) {
-    // case 'concert-this':
-    //     concertThis();
-    //     break;
-    // case 'spotify-this-song':
-    //     spotifyThis();
-    //     break;
+    case 'concert-this':
+        concertThis();
+        break;
+    case 'spotify-this-song':
+        spotifyThis();
+        break;
     case "movie-this":
         movie();
         break;
-    // default:
-    //     movie();
-    //     break;
 };
+
+
 
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
+    
     request(queryURL, function (error, response, body) {
 
         if (!error && response.statusCode === 200) {
@@ -79,6 +84,5 @@ function movie() {
 
     });
 }
-
 
 
