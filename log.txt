@@ -79,3 +79,51 @@ Language: English, Mohawk
 Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 ********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Mr. Nobody
+Release Year: 2009
+IMDB Rating: 7.9
+Rotten Tomatoes Rating: 67%
+Country movie produced in: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Maybe Logic: The Lives and Ideas of Robert Anton Wilson
+Release Year: 2003
+IMDB Rating: 7.9
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: USA
+Language: English
+Plot: Guerrilla ontologist. Psychedelic magickian. Outer head of the Illuminati. Quantum psychologist. Sit-down comic/philosopher. Discordian Pope. Whatever the label and rank, Robert Anton ...
+Actors: Robert Anton Wilson, Valerie Corral, Paul Krassner, Tom Robbins
+********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Lincoln
+Release Year: 2012
+IMDB Rating: 7.4
+Rotten Tomatoes Rating: 89%
+Country movie produced in: USA, India
+Language: English
+Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
+Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Lincoln
+Release Year: 2012
+IMDB Rating: 7.4
+Rotten Tomatoes Rating: 89%
+Country movie produced in: USA, India
+Language: English
+Plot: As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.
+Actors: Daniel Day-Lewis, Sally Field, David Strathairn, Joseph Gordon-Levitt
+********************************************************************************

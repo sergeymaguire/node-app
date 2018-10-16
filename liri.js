@@ -2,14 +2,14 @@
 function helpMenu() {
     console.log("Please one of the following... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
 }
+helpMenu();
 //const fs = require('fs');
 var request = require("request"),
     fs = require("fs"),
     keys = require("./keys.js"),
     infoInput = process.argv,
     action = process.argv[2],
-    title = "",
-    artist = "";
+    title = "";
 
 if (!action || !infoInput || !infoInput.length) {
     helpMenu();
