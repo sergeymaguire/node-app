@@ -22,7 +22,6 @@ if (process.argv[3] !== undefined) {
     };
 }
 
-
 switch (action) {
     // case 'concert-this':
     //     concertThis();
@@ -46,17 +45,13 @@ function movie() {
             if (body) {
                 var data = JSON.parse(body);
                 if (data.Error == 'Movie not found!') {
-                    var movieAppend = ("\n********************************** MOVIE THIS **********************************\nOMDB could not find any movies that matched that title.  Please try again.\n********************************************************************************\n");
-                    console.log(movieAppend)
+                    var noMovie = ("\n**********************************Sorry NO MOVIE**********************************\nOMDB could not find any movies that matched that title.  Please try again.\n********************************************************************************\n");
+                    console.log(noMovie)
                 } else if (!data.Ratings || data.Ratings.length < 2) {
-                   
-
-                
-                    var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
+                    var movieAppend = ("\n********************************** MOVIE **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
                     return
                 } else if (data.Ratings[1].Value !== undefined) {
-                    
                     var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: " + data.Ratings[1].Value + "\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
                 };
@@ -65,3 +60,4 @@ function movie() {
 
     });
 }
+
