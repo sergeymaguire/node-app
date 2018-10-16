@@ -36,9 +36,9 @@ switch (action) {
     case "movie-this":
         movie();
         break;
-    default:
-        movie();
-        break;
+    // default:
+    //     movie();
+    //     break;
 };
 
 function movie() {
