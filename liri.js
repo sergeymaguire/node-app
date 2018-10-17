@@ -100,8 +100,12 @@ function spotifyThis(song) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
-       
-      console.log(data.tracks.items[0].name); 
+       console.log(data)
+       console.log("The song name: " + data.tracks.items[0].name);
+       console.log("Popularity of the song: " + data.tracks.items[0].popularity);
+       console.log("Song preview: " + data.tracks.items[0].preview_url);
+       console.log("Track number: " + data.tracks.items[0].track_number);
+   
       });
 }
 
