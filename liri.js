@@ -1,4 +1,4 @@
-//require("dotenv").config();
+require("dotenv").config();
 function helpMenu() {
     console.log("How to run the lookup commands... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
 }
@@ -8,15 +8,15 @@ var request = require("request"),
     fs = require("fs"),
     keys = require("./keys.js"),
     Spotify = require('node-spotify-api'),
+    //spotify = new Spotify(),
     spotify = new Spotify({
         id: "ada3a8a5d341447a8acba938aef731da",
         secret: "bc31d08372814073a2268765004cf010"
       }),
     infoInput = process.argv,
     action = process.argv[2],
-    title = "",
-    song = "",
-    artist = "";
+    param = "";
+   
     // var spotify = new Spotify({
     //     id: "ada3a8a5d341447a8acba938aef731da",
     //     secret: "bc31d08372814073a2268765004cf010"
@@ -32,12 +32,12 @@ if (!action || !infoInput || !infoInput.length) {
 
 if (process.argv[3] !== undefined) {
     for (i = 3; i < infoInput.length; i++) {
-        title += infoInput[i] + " ";
+        param += infoInput[i] + " ";
     };
 }
 
-if (!title || title.length < 2){
-    title = "Pulp Fiction";
+if (!param || param.length < 2){
+    param = "Pulp Fiction";
 }
 
 switch (action) {
@@ -45,7 +45,7 @@ switch (action) {
         concertThis();
         break;
     case 'spotify-this-song':
-        spotifyThis(title);
+        spotifyThis(param);
         break;
     case "movie-this":
         movie();
@@ -58,7 +58,7 @@ switch (action) {
 
 
 function movie() {
-    var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
+    var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
     
     request(queryURL, function (error, response, body) {
 
@@ -100,10 +100,13 @@ function spotifyThis(song) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
-       console.log("The song name: " + data.tracks.items[0].name);
-       console.log("Popularity of the song: " + data.tracks.items[0].popularity);
-       console.log("Song preview: " + data.tracks.items[0].preview_url);
-       console.log("Track number: " + data.tracks.items[0].track_number);
+        
+       //console.log("********************************** Spotify Song *********************************");
+       console.log(data)
+    //    console.log("The song name: " + data.tracks.items[0].name);
+    //    console.log("Popularity of the song: " + data.tracks.items[0].popularity);
+    //    console.log("Song preview: " + data.tracks.items[0].preview_url);
+    //    console.log("Track number: " + data.tracks.items[0].track_number);
    
       });
 }
