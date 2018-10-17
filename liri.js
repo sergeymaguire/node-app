@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 function helpMenu() {
     console.log("How to run the lookup commands... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
 }
@@ -100,7 +100,6 @@ function spotifyThis(song) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
-       console.log(data)
        console.log("The song name: " + data.tracks.items[0].name);
        console.log("Popularity of the song: " + data.tracks.items[0].popularity);
        console.log("Song preview: " + data.tracks.items[0].preview_url);
