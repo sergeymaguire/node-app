@@ -1,15 +1,12 @@
 require("dotenv").config();
-
 function helpMenu() {
-    console.log("How to run the lookup commands... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
+    console.log( "\n" + "How to run the lookup commands... " + "\n"  +"\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>" + "\n");
 }
 helpMenu();
-//const fs = require('fs');
 var request = require("request"),
     fs = require("fs"),
     keys = require("./keys.js"),
     Spotify = require('node-spotify-api'),
-    //spotify = new Spotify(),
     spotify = new Spotify({
         id: "ada3a8a5d341447a8acba938aef731da",
         secret: "bc31d08372814073a2268765004cf010"
@@ -18,28 +15,20 @@ var request = require("request"),
     action = process.argv[2],
     param = "";
 
-// var spotify = new Spotify({
-//     id: "ada3a8a5d341447a8acba938aef731da",
-//     secret: "bc31d08372814073a2268765004cf010"
-//   });
-
-//BANDS IN TOWN URLLLLL
-//"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
-
 if (!action || !infoInput || !infoInput.length) {
     helpMenu();
     process.exit(1);
-}
+};
 
 if (process.argv[3] !== undefined) {
     for (i = 3; i < infoInput.length; i++) {
         param += infoInput[i] + " ";
     };
-}
+};
 
 if (!param || param.length < 2) {
     param = "Pulp Fiction";
-}
+};
 
 switch (action) {
     case 'concert-this':
@@ -55,8 +44,6 @@ switch (action) {
         doIt();
         break;
 };
-
-
 
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
@@ -94,7 +81,7 @@ function movie() {
         };
 
     });
-}
+};
 
 function spotifyThis(song) {
     spotify.search({
@@ -106,14 +93,9 @@ function spotifyThis(song) {
         }
         for (var i = 0; i < data.tracks.items.length; i++) {
             if (data.tracks.items[i].preview_url) {
-                console.log("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number);
-                //console.log(data)
-                // console.log("The song name: " + data.tracks.items[i].name);
-                // console.log("Popularity of the song: " + data.tracks.items[i].popularity);
-                // console.log("Song preview: " + data.tracks.items[i].preview_url);
-                // console.log("Track number: " + data.tracks.items[i].track_number);
+                console.log("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number);
                 return;
-            }
-        }
+            };
+        };
     });
-}
+};
