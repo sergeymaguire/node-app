@@ -93,7 +93,7 @@ function spotifyThis(song) {
         }
         for (var i = 0; i < data.tracks.items.length; i++) {
             if (data.tracks.items[i].preview_url) {
-                console.log("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number);
+                console.log("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name);
                 return;
             };
         };
