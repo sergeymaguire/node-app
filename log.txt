@@ -415,3 +415,14 @@ Language: English, Spanish, French
 Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
 Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
 ********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
