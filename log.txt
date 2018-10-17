@@ -382,3 +382,36 @@ Language: English, Russian, Spanish, Korean
 Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
 Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
 ********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************

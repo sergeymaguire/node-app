@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 function helpMenu() {
     console.log("How to run the lookup commands... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
 }
@@ -12,18 +13,18 @@ var request = require("request"),
     spotify = new Spotify({
         id: "ada3a8a5d341447a8acba938aef731da",
         secret: "bc31d08372814073a2268765004cf010"
-      }),
+    }),
     infoInput = process.argv,
     action = process.argv[2],
     param = "";
-   
-    // var spotify = new Spotify({
-    //     id: "ada3a8a5d341447a8acba938aef731da",
-    //     secret: "bc31d08372814073a2268765004cf010"
-    //   });
 
-    //BANDS IN TOWN URLLLLL
-    //"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
+// var spotify = new Spotify({
+//     id: "ada3a8a5d341447a8acba938aef731da",
+//     secret: "bc31d08372814073a2268765004cf010"
+//   });
+
+//BANDS IN TOWN URLLLLL
+//"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
 if (!action || !infoInput || !infoInput.length) {
     helpMenu();
@@ -36,7 +37,7 @@ if (process.argv[3] !== undefined) {
     };
 }
 
-if (!param || param.length < 2){
+if (!param || param.length < 2) {
     param = "Pulp Fiction";
 }
 
@@ -59,7 +60,7 @@ switch (action) {
 
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
-    
+
     request(queryURL, function (error, response, body) {
 
         if (!error && response.statusCode === 200) {
@@ -86,7 +87,7 @@ function movie() {
                     var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: " + data.Ratings[1].Value + "\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
                     fs.appendFile("log.txt", movieAppend, function (err) {
-                       
+
                     });
                 };
             };
@@ -96,18 +97,23 @@ function movie() {
 }
 
 function spotifyThis(song) {
-    spotify.search({ type: 'track', query: song }, function(err, data) {
+    spotify.search({
+        type: 'track',
+        query: song
+    }, function (err, data) {
         if (err) {
-          return console.log('Error occurred: ' + err);
+            return console.log('Error occurred: ' + err);
         }
-        
-       //console.log("********************************** Spotify Song *********************************");
-       console.log(data)
-    //    console.log("The song name: " + data.tracks.items[0].name);
-    //    console.log("Popularity of the song: " + data.tracks.items[0].popularity);
-    //    console.log("Song preview: " + data.tracks.items[0].preview_url);
-    //    console.log("Track number: " + data.tracks.items[0].track_number);
-   
-      });
+        for (var i = 0; i < data.tracks.items.length; i++) {
+            if (data.tracks.items[i].preview_url) {
+                console.log("********************************** Spotify Song *********************************");
+                //console.log(data)
+                console.log("The song name: " + data.tracks.items[i].name);
+                console.log("Popularity of the song: " + data.tracks.items[i].popularity);
+                console.log("Song preview: " + data.tracks.items[i].preview_url);
+                console.log("Track number: " + data.tracks.items[i].track_number);
+                return;
+            }
+        }
+    });
 }
-
