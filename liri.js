@@ -103,9 +103,8 @@ function spotifyThis(song) {
         };
     });
 };
-// function bandsInTown(parameter){
-//     var queryUrl = "https://rest.bandsintown.com/artists/"+param+"/events?app_id=codecademy";
-//     request(queryUrl, function(error, response, body) {
-    
-//     });
-//     }
+
+var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
+console.log(bandsAppend);
+fs.appendFile("log.txt", bandsAppend, function (err) {
+});
