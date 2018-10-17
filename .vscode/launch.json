@@ -21,7 +21,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}\\liri.js",
             "args": [
-              "movie-this"
+              "spotify-this-song",
+              "ace of spades"
               
                 ]
             

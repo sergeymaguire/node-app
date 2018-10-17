@@ -1,6 +1,6 @@
-//require("dotenv").config();
+require("dotenv").config();
 function helpMenu() {
-    console.log("Please one of the following... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
+    console.log("How to run the lookup commands... " + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>)");
 }
 helpMenu();
 //const fs = require('fs');
@@ -8,10 +8,19 @@ var request = require("request"),
     fs = require("fs"),
     keys = require("./keys.js"),
     Spotify = require('node-spotify-api'),
+    spotify = new Spotify({
+        id: "ada3a8a5d341447a8acba938aef731da",
+        secret: "bc31d08372814073a2268765004cf010"
+      }),
     infoInput = process.argv,
     action = process.argv[2],
     title = "",
+    song = "",
     artist = "";
+    // var spotify = new Spotify({
+    //     id: "ada3a8a5d341447a8acba938aef731da",
+    //     secret: "bc31d08372814073a2268765004cf010"
+    //   });
 
     //BANDS IN TOWN URLLLLL
     //"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
@@ -28,7 +37,7 @@ if (process.argv[3] !== undefined) {
 }
 
 if (!title || title.length < 2){
-    title = "Mr. Nobody";
+    title = "Pulp Fiction";
 }
 
 switch (action) {
@@ -36,9 +45,12 @@ switch (action) {
         concertThis();
         break;
     case 'spotify-this-song':
-        spotifyThis();
+        spotifyThis(title);
         break;
     case "movie-this":
+        movie();
+        break;
+    case "do-what-it-says":
         movie();
         break;
 };
@@ -74,9 +86,7 @@ function movie() {
                     var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: " + data.Ratings[1].Value + "\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
                     console.log(movieAppend)
                     fs.appendFile("log.txt", movieAppend, function (err) {
-                        if (err) {
-                            return console.log("Movie data did not append to log.txt file.");
-                        };
+                       
                     });
                 };
             };
@@ -85,4 +95,13 @@ function movie() {
     });
 }
 
+function spotifyThis(song) {
+    spotify.search({ type: 'track', query: song }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+       
+      console.log(data.tracks.items[0].name); 
+      });
+}
 
