@@ -25,22 +25,27 @@ if (process.argv[3] !== undefined) {
     };
 };
 
-if (!param || param.length < 2) {
-    param = "Pulp Fiction";
-};
 
 switch (action) {
     case 'concert-this':
         bandsInTown();
         break;
     case 'spotify-this-song':
+    if (!param || param.length < 2) {
+        param = "Ace of Spades"
         spotifyThis(param);
         break;
+    }
     case "movie-this":
-        movie();
-        break;
+    
+if (!param || param.length < 2) {
+    param = "Pulp Fiction";
+    movie();
+    break;
+};
+       
     case "do-what-it-says":
-        doIt();
+        //doIt();
         break;
 };
 function movie() {
@@ -94,7 +99,7 @@ function spotifyThis(song) {
                 fs.appendFile("log.txt", spotifyAppend, function (err) {
                 });
                 return;
-            };
+            }
         };
     });
 };
