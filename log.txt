@@ -468,3 +468,58 @@ Language: English, Latin
 Plot: Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.
 Actors: Vera Farmiga, Patrick Wilson, Lili Taylor, Ron Livingston
 ********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Ace of Spades
+Release Year: 1984
+IMDB Rating: N/A
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: South Africa
+Language: Zulu
+Plot: N/A
+Actors: N/A
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Ace of Spades
+Release Year: 1984
+IMDB Rating: N/A
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: South Africa
+Language: Zulu
+Plot: N/A
+Actors: N/A
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Ace of Spades
+Release Year: 1984
+IMDB Rating: N/A
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: South Africa
+Language: Zulu
+Plot: N/A
+Actors: N/A
+********************************************************************************
+********************************** Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Motörhead
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Motörhead
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Turn Down for What
+Album name: Turn Down for What
+Popularity of the song: 73
+Song preview: https://p.scdn.co/mp3-preview/fde5f6c570eb2ecaca797c0984a247a47d3fdc21?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: DJ Snake
+*********************************************************************************

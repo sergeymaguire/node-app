@@ -16,7 +16,6 @@ var request = require("request"),
     param = "";
 
 if (!action || !infoInput || !infoInput.length) {
-    helpMenu();
     process.exit(1);
 };
 
@@ -32,7 +31,7 @@ if (!param || param.length < 2) {
 
 switch (action) {
     case 'concert-this':
-        concertThis();
+        bandsInTown();
         break;
     case 'spotify-this-song':
         spotifyThis(param);
@@ -44,12 +43,9 @@ switch (action) {
         doIt();
         break;
 };
-
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
-
     request(queryURL, function (error, response, body) {
-
         if (!error && response.statusCode === 200) {
             if (body) {
                 var data = JSON.parse(body);
@@ -92,10 +88,19 @@ function spotifyThis(song) {
             return console.log('Error occurred: ' + err);
         }
         for (var i = 0; i < data.tracks.items.length; i++) {
-            if (data.tracks.items[i].preview_url) {
-                console.log("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name);
+            if (data.tracks.items[i].preview_url && data.tracks.items[i].name && data.tracks.items[i].album.name) {
+                var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n" + "*********************************************************************************");
+                console.log(spotifyAppend)
+                fs.appendFile("log.txt", spotifyAppend, function (err) {
+                });
                 return;
             };
         };
     });
 };
+function bandsInTown(parameter){
+    var queryUrl = "https://rest.bandsintown.com/artists/"+param+"/events?app_id=codecademy";
+    request(queryUrl, function(error, response, body) {
+    
+    });
+    }
