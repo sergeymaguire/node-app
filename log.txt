@@ -522,4 +522,81 @@ Popularity of the song: 73
 Song preview: https://p.scdn.co/mp3-preview/fde5f6c570eb2ecaca797c0984a247a47d3fdc21?cid=ada3a8a5d341447a8acba938aef731da
 Track number: 1
 Song's Artist: DJ Snake
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Pulp Fiction
+Album name: Super Saiyan
+Popularity of the song: 45
+Song preview: https://p.scdn.co/mp3-preview/45f3b4e4690153fcdfc9b18cace5c26ebac01b11?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 3
+Song's Artist: Kid Trunks
+******************************************************************************************************************* Spotify Song *********************************
+The song name: LAX to JFK
+Album name: Atmosphere
+Popularity of the song: 50
+Song preview: https://p.scdn.co/mp3-preview/9acca45f5946c1acec5d93df4431d85cf658e0cc?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 7
+Song's Artist: Kaskade
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Stare at the Stars
+Album name: The Verdict
+Popularity of the song: 6
+Song preview: https://p.scdn.co/mp3-preview/a0564d1d868accaf9a659c740464cd3fa256f8bd?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 2
+Song's Artist: FBA DA Gang
 *********************************************************************************
+********************************** MOVIE **********************************
+Title: undefined
+Release Year: undefined
+IMDB Rating: undefined
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: undefined
+Language: undefined
+Plot: undefined
+Actors: undefined
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************

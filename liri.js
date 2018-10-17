@@ -98,9 +98,9 @@ function spotifyThis(song) {
         };
     });
 };
-function bandsInTown(parameter){
-    var queryUrl = "https://rest.bandsintown.com/artists/"+param+"/events?app_id=codecademy";
-    request(queryUrl, function(error, response, body) {
+// function bandsInTown(parameter){
+//     var queryUrl = "https://rest.bandsintown.com/artists/"+param+"/events?app_id=codecademy";
+//     request(queryUrl, function(error, response, body) {
     
-    });
-    }
+//     });
+//     }
