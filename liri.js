@@ -104,7 +104,7 @@ function spotifyThis(song) {
     });
 };
 
-var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
-console.log(bandsAppend);
-fs.appendFile("log.txt", bandsAppend, function (err) {
-});
+// var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
+// console.log(bandsAppend);
+// fs.appendFile("log.txt", bandsAppend, function (err) {
+// });
