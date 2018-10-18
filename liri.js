@@ -1,6 +1,7 @@
 require("dotenv").config();
+
 function helpMenu() {
-    console.log( "\n" + "How to run the lookup commands... " + "\n"  +"\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>" + "\n" + "Do what it says(node liri.js do-what-it-says<Will do one of the three commands above depending on what is on your random.txt file>)" + "\n");
+    console.log("\n" + "How to run the lookup commands... " + "\n" + "\n" + "A movie name(node liri.js movie-this<Movie name here>)" + "\n" + "A song name(node liri.js spotify-this-song<Song name here)" + "\n" + "A band lookup(node liri.js concert-this<artist/band name here>" + "\n" + "Do what it says(node liri.js do-what-it-says<Will do one of the three commands above depending on what is on your random.txt file>)" + "\n");
 }
 helpMenu();
 const fs = require("fs");
@@ -25,33 +26,37 @@ if (process.argv[3] !== undefined) {
     };
 };
 
-    fs.readFile('random.txt', "utf8", function(err, data) {
-        console.log(data)
-    });
+// fs.readFile('random.txt', "utf8", function(err, data) {
+//     console.log(data)
+// });
 
 
 switch (action) {
     case 'concert-this':
+        if (!param || param.length < 2) {
+            param = "zion i";
+        }
         bandsInTown();
         break;
+
     case 'spotify-this-song':
-    if (!param || param.length < 2) {
-        param = "Ace of Spades"
+        if (!param || param.length < 2) {
+            param = "Ace of Spades";
+        }
         spotifyThis(param);
         break;
-    }
     case "movie-this":
-    
-if (!param || param.length < 2) {
-    param = "Pulp Fiction";
-    movie();
-    break;
-};
-       
+        if (!param || param.length < 2) {
+            param = "Pulp Fiction";
+        };
+        movie();
+        break;
+
     case "do-what-it-says":
         //doIt();
         break;
 };
+
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
     request(queryURL, function (error, response, body) {
@@ -89,6 +94,7 @@ function movie() {
 };
 
 function spotifyThis(song) {
+    console.log("spotifyThis: " + song);
     spotify.search({
         type: 'track',
         query: song
@@ -96,19 +102,23 @@ function spotifyThis(song) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
+        if(!data.tracks.items || !data.tracks.items.length) {
+            console.log("could not find this song: " + song);
+            return;
+        }
         for (var i = 0; i < data.tracks.items.length; i++) {
             if (data.tracks.items[i].preview_url && data.tracks.items[i].name && data.tracks.items[i].album.name) {
-                var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name +"\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n" + "*********************************************************************************");
+                var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name + "\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n" + "*********************************************************************************");
                 console.log(spotifyAppend)
-                fs.appendFile("log.txt", spotifyAppend, function (err) {
-                });
+                fs.appendFile("log.txt", spotifyAppend, function (err) {});
                 return;
             }
         };
     });
 };
-
+//function concertThis() {}
 // var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
 // console.log(bandsAppend);
 // fs.appendFile("log.txt", bandsAppend, function (err) {
 // });
+//"https://rest.bandsintown.com/artists/" + param + "/events?app_id=codingbootcamp"
