@@ -22,8 +22,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}\\liri.js",
             "args": [
-              "spotify-this-song",
-              "dream with me"
+              "concert-this",
+              "Rancid"
               
                 ]
             

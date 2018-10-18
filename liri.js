@@ -26,9 +26,9 @@ if (process.argv[3] !== undefined) {
     };
 };
 
-// fs.readFile('random.txt', "utf8", function(err, data) {
-//     console.log(data)
-// });
+fs.readFile('random.txt', "utf8", function(err, data) {
+    console.log(data)
+});
 
 
 switch (action) {
@@ -36,7 +36,7 @@ switch (action) {
         if (!param || param.length < 2) {
             param = "zion i";
         }
-        bandsInTown();
+        concertThis(param);
         break;
 
     case 'spotify-this-song':
@@ -49,7 +49,7 @@ switch (action) {
         if (!param || param.length < 2) {
             param = "Pulp Fiction";
         };
-        movie();
+        movie(param);
         break;
 
     case "do-what-it-says":
@@ -57,8 +57,8 @@ switch (action) {
         break;
 };
 
-function movie() {
-    var queryURL = "http://www.omdbapi.com/?t=" + param + "&y=&plot=short&apikey=trilogy";
+function movie(title) {
+    var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
     request(queryURL, function (error, response, body) {
         if (!error && response.statusCode === 200) {
             if (body) {
@@ -111,16 +111,6 @@ function spotifyThis(song) {
             if (data.tracks.items[i].preview_url &&
                 data.tracks.items[i].name &&
                 data.tracks.items[i].album.name) {
-                // var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" 
-                // + "The song name: " 
-                // + data.tracks.items[i].name 
-                // + "\n" + "Album name: " 
-                // + data.tracks.items[i].album.name + "\n"
-                // + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" 
-                // + "Song preview: " + data.tracks.items[i].preview_url + "\n" 
-                // + "Track number: " + data.tracks.items[i].track_number + "\n" 
-                // //+ "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n"
-                // + "*********************************************************************************");
                 logSongs(data.tracks.items[i]);
                 return;
             }
@@ -161,17 +151,35 @@ function logSongs(item) {
         spotifyAppend = spotifyAppend + "Track number: no track number  " + "\n";
 
     if (item.artist && item.artist.name)
-        spotifyAppend = spotifyAppend  +"Song's Artist: " + item.artist.name + "\n";
+        spotifyAppend = spotifyAppend + "Song's Artist: " + item.artist.name + "\n";
     else
-        spotifyAppend = spotifyAppend +"Song's Artist: No artist " + "\n";
+        spotifyAppend = spotifyAppend + "Song's Artist: No artist " + "\n";
 
     spotifyAppend = spotifyAppend + "*********************************************************************************)";
     console.log(spotifyAppend);
     fs.appendFile("log.txt", spotifyAppend, function (err) {});
 }
-function concertThis(bands) {}
-var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
-console.log(bandsAppend);
-fs.appendFile("log.txt", bandsAppend, function (err) {
-});
-"https://rest.bandsintown.com/artists/" + bands + "/events?app_id=codingbootcamp"
+
+function concertThis(bands) {
+    console.log(bands);
+    var bandsAppend = "";
+    var queryURL = "https://rest.bandsintown.com/artists/" + bands.trim() + "/events?app_id=12677f5a7f6ea3d8f4ed813de5bf152e"
+    request(queryURL, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            //var dateForm = month + "/" + day + "/" + year;
+            //console.log(bandsAppend);
+            //console.log(JSON.parse(body));
+            logEvent((JSON.parse(body)));
+            //console.log(body);
+            fs.appendFile("log.txt", bandsAppend, function (err) {
+
+            });
+        }
+    })
+};
+function logEvent (event) {
+    //console.log(event);
+    for(var i = 0; i < event.length; i++){
+        console.log(event[i])
+    }
+}
