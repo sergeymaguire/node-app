@@ -824,3 +824,135 @@ Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
 **********************************Sorry NO MOVIE**********************************
 OMDB could not find any movies that matched that title.  Please try again.
 ********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Training Day
+Release Year: 2001
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: 72%
+Country movie produced in: USA, Australia
+Language: English, Russian, Spanish, Korean
+Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
+Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+********************************************************************************
+********************************** Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Motörhead
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Ace
+Album name: Room 25
+Popularity of the song: 66
+Song preview: https://p.scdn.co/mp3-preview/9418809b672158b08ad3f6d17066cc6efab4b8ab?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 8
+Song's Artist: Noname
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Motörhead
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Sleep Music to Help You Relax All Nigh
+Album name: Sleep Music to Help You Relax All Night: New Age for Insomnia and Healing Natural Sleep Aid, Piano, Flute & Calm Sea Waves
+Popularity of the song: 49
+Song preview: https://p.scdn.co/mp3-preview/ceb7938270cbef0a779d39a9f7c4a68324f582f3?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Soothing Chill Out for Insomnia
+******************************************************************************************************************* Spotify Song *********************************
+The song name: One Kiss (with Dua Lipa)
+Album name: One Kiss (with Dua Lipa)
+Popularity of the song: 94
+Song preview: https://p.scdn.co/mp3-preview/34b3b95afb8e1d34363f01b194b4a729100d3710?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Dua Lipa
+******************************************************************************************************************* Spotify Song *********************************
+The song name: One Kiss (with Dua Lipa)
+Album name: One Kiss (with Dua Lipa)
+Popularity of the song: 94
+Song preview: https://p.scdn.co/mp3-preview/34b3b95afb8e1d34363f01b194b4a729100d3710?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Dua Lipa
+******************************************************************************************************************* Spotify Song *********************************
+The song name: One Kiss (with Dua Lipa)
+Album name: One Kiss (with Dua Lipa)
+Popularity of the song: 94
+Song preview: https://p.scdn.co/mp3-preview/34b3b95afb8e1d34363f01b194b4a729100d3710?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Dua Lipa
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: Motörhead
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Night Changes
+Album name: FOUR (Deluxe)
+Popularity of the song: 76
+Song preview: https://p.scdn.co/mp3-preview/c79b330f42df9569657670bb0ff072792a455bc4?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 7
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Night Changes
+Album name: FOUR (Deluxe)
+Popularity of the song: 76
+Song preview: https://p.scdn.co/mp3-preview/c79b330f42df9569657670bb0ff072792a455bc4?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 7
+******************************************************************************************************************* Spotify Song *********************************
+The song name: God's Plan
+Album name: God's Plan
+Popularity of the song: 62
+Song preview: https://p.scdn.co/mp3-preview/fdf2028e10181e80cc502a16a629e7bb569b8107?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+******************************************************************************************************************* Spotify Song *********************************
+The song name: Stay With Me
+Album name: In the Shape of a Dream
+Popularity of the song: 71
+Song preview: https://p.scdn.co/mp3-preview/ad73b479503175907e0ea289dc17fb1236275c33?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 6
+*********************************************************************************(********************************** Spotify Song *********************************
+The song name: Stay With Me
+Album name: In the Shape of a Dream
+Popularity of the song: 71
+Song preview: https://p.scdn.co/mp3-preview/ad73b479503175907e0ea289dc17fb1236275c33?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 6
+NaN
+*********************************************************************************)(********************************** Spotify Song *********************************
+The song name: Stay With Me
+Album name: In the Shape of a Dream
+Popularity of the song: 71
+Song preview: https://p.scdn.co/mp3-preview/ad73b479503175907e0ea289dc17fb1236275c33?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 6
+NaN
+*********************************************************************************)(********************************** Spotify Song *********************************
+The song name: Stay With Me
+Album name: In the Shape of a Dream
+Popularity of the song: 71
+Song preview: https://p.scdn.co/mp3-preview/ad73b479503175907e0ea289dc17fb1236275c33?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 6
+Song's Artist: No artist 
+*********************************************************************************)

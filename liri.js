@@ -94,6 +94,7 @@ function movie() {
 };
 
 function spotifyThis(song) {
+    song = "'" + song + "'";
     console.log("spotifyThis: " + song);
     spotify.search({
         type: 'track',
@@ -102,23 +103,75 @@ function spotifyThis(song) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        if(!data.tracks.items || !data.tracks.items.length) {
+        if (!data.tracks.items || !data.tracks.items.length) {
             console.log("could not find this song: " + song);
             return;
         }
         for (var i = 0; i < data.tracks.items.length; i++) {
-            if (data.tracks.items[i].preview_url && data.tracks.items[i].name && data.tracks.items[i].album.name) {
-                var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" + "The song name: " + data.tracks.items[i].name + "\n" + "Album name: " + data.tracks.items[i].album.name + "\n" + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" + "Song preview: " + data.tracks.items[i].preview_url + "\n" + "Track number: " + data.tracks.items[i].track_number + "\n" + "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n" + "*********************************************************************************");
-                console.log(spotifyAppend)
-                fs.appendFile("log.txt", spotifyAppend, function (err) {});
+            if (data.tracks.items[i].preview_url &&
+                data.tracks.items[i].name &&
+                data.tracks.items[i].album.name) {
+                // var spotifyAppend = ("********************************** Spotify Song *********************************" + "\n" 
+                // + "The song name: " 
+                // + data.tracks.items[i].name 
+                // + "\n" + "Album name: " 
+                // + data.tracks.items[i].album.name + "\n"
+                // + "Popularity of the song: " + data.tracks.items[i].popularity + "\n" 
+                // + "Song preview: " + data.tracks.items[i].preview_url + "\n" 
+                // + "Track number: " + data.tracks.items[i].track_number + "\n" 
+                // //+ "Song's Artist: " + data.tracks.items[i].artists[i].name + "\n"
+                // + "*********************************************************************************");
+                logSongs(data.tracks.items[i]);
                 return;
             }
         };
     });
 };
-//function concertThis() {}
-// var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
-// console.log(bandsAppend);
-// fs.appendFile("log.txt", bandsAppend, function (err) {
-// });
-//"https://rest.bandsintown.com/artists/" + param + "/events?app_id=codingbootcamp"
+
+
+//Log song and write to log.txt
+function logSongs(item) {
+    var spotifyAppend = "(********************************** Spotify Song *********************************" + "\n" +
+        "The song name: ";
+    if (item.name)
+        spotifyAppend = spotifyAppend + item.name;
+    else
+        spotifyAppend = spotifyAppend + "No name";
+
+    spotifyAppend = spotifyAppend + "\n" + "Album name: ";
+
+    if (item.album && item.album.name)
+        spotifyAppend = spotifyAppend + item.album.name + "\n";
+    else
+        spotifyAppend = spotifyAppend + "No Album name" + "\n";
+
+    if (item.popularity)
+        spotifyAppend = spotifyAppend + "Popularity of the song: " + item.popularity + "\n";
+    else
+        spotifyAppend = spotifyAppend + "Popularity of the song: no popularity rating " + "\n";
+
+    if (item.preview_url)
+        spotifyAppend = spotifyAppend + "Song preview: " + item.preview_url + "\n";
+    else
+        spotifyAppend = spotifyAppend + "Song preview: No song preview " + "\n";
+
+    if (item.track_number)
+        spotifyAppend = spotifyAppend + "Track number: " + item.track_number + "\n";
+    else
+        spotifyAppend = spotifyAppend + "Track number: no track number  " + "\n";
+
+    if (item.artist && item.artist.name)
+        spotifyAppend = spotifyAppend  +"Song's Artist: " + item.artist.name + "\n";
+    else
+        spotifyAppend = spotifyAppend +"Song's Artist: No artist " + "\n";
+
+    spotifyAppend = spotifyAppend + "*********************************************************************************)";
+    console.log(spotifyAppend);
+    fs.appendFile("log.txt", spotifyAppend, function (err) {});
+}
+function concertThis(bands) {}
+var bandsAppend = console.log("Venue Location: " + JS[i].venue.city + "\n" + "Venue Name: " + JS[i].venue.name + "\n" + "Date: " + dateForm);
+console.log(bandsAppend);
+fs.appendFile("log.txt", bandsAppend, function (err) {
+});
+"https://rest.bandsintown.com/artists/" + bands + "/events?app_id=codingbootcamp"
