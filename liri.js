@@ -181,5 +181,8 @@ function logEvent (event) {
     //console.log(event);
     for(var i = 0; i < event.length; i++){
         console.log(event[i])
+        //console.log(event.something.something[i])
+        console.log("hiell")
+        
     }
 }
