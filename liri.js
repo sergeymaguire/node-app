@@ -124,6 +124,7 @@ function spotifyThis(song) {
 
 //Log song and write to log.txt
 function logSongs(item) {
+   
     var spotifyAppend = "(********************************** Spotify Song *********************************" + "\n" +
         "The song name: ";
     if (item.name)
@@ -190,7 +191,11 @@ function logEvent (event) {
         dt = day + "/" + month + "/" + year;
         console.log(event)
         //console.log(event.something.something[i])
-        console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name + "\n" + "Showing at this date: " + dt);
+       var concerts = console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name + "\n" + "Showing at this date: " + dt);
+       console.log(concerts);
+       fs.appendFile("log.txt", concerts, function (err) {
+
+    });
         //formatConcertDate();
     }
 }
