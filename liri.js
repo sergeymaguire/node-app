@@ -54,9 +54,9 @@ switch (action) {
         break;
 
     case "do-what-it-says":
-    movie();
-    spotifyThis();
-    concertThis();
+        movie();
+        spotifyThis();
+        concertThis();
         //doIt();
         break;
 };
@@ -76,13 +76,8 @@ function movie(title) {
                         };
                     });
                 } else if (!data.Ratings || data.Ratings.length < 2) {
-                    var movieAppend = ("\n********************************** MOVIE **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
-                    console.log(movieAppend)
-                    fs.appendFile("log.txt", movieAppend, function (err) {
-                        if (err) {
-                            return console.log("Movie data did not append to log.txt file.");
-                        };
-                    });
+                    logMovie(data);
+
                     return
                 } else if (data.Ratings[1].Value !== undefined) {
                     var movieAppend = ("\n********************************** MOVIE THIS **********************************\nTitle: " + data.Title + "\nRelease Year: " + data.Year + "\nIMDB Rating: " + data.imdbRating + "\nRotten Tomatoes Rating: " + data.Ratings[1].Value + "\nCountry movie produced in: " + data.Country + "\nLanguage: " + data.Language + "\nPlot: " + data.Plot + "\nActors: " + data.Actors + "\n********************************************************************************\n");
@@ -96,6 +91,48 @@ function movie(title) {
 
     });
 };
+
+function logMovie(data) {
+    var movieAppend = "\n********************************** MOVIE **********************************\nTitle: " + data.Title;
+
+
+    if (data.Year)
+        movieAppend = movieAppend + "\nRelease Year: " + data.Year;
+    else
+        movieAppend = movieAppend + "\nRelease Year: No release year";
+
+    if (data.imdbRating)
+        movieAppend = movieAppend + "\nIMDB Rating: " + data.imdbRating;
+    else
+        movieAppend = movieAppend + "\nIMDB Rating: No Rating";
+
+    if (data.Country)
+        movieAppend = movieAppend + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: " + data.Country;
+    else
+        movieAppend = movieAppend + "\nRotten Tomatoes Rating: No Rotten Tomatoes Rating\nCountry movie produced in: N/A";
+
+    if (data.Language)
+        movieAppend = movieAppend + "\nLanguage: " + data.Language;
+    else
+        movieAppend = movieAppend + "\nLanguage: N/A";
+
+    if (data.plot)
+        movieAppend = movieAppend + "\nPlot: " + data.Plot;
+    else
+        movieAppend = movieAppend + "\nPlot: N/A";
+    if (data.Actors)
+        movieAppend = movieAppend + "\nActors: " + data.Actors;
+    else
+        movieAppend = movieAppend + "\nActors: N/A";
+
+    movieAppend = movieAppend + "\n********************************************************************************\n";
+    console.log(movieAppend)
+    fs.appendFile("log.txt", movieAppend, function (err) {
+        if (err) {
+            return console.log("Movie data did not append to log.txt file.");
+        };
+    });
+}
 
 function spotifyThis(song) {
     song = "'" + song + "'";
@@ -125,7 +162,7 @@ function spotifyThis(song) {
 
 //Log song and write to log.txt
 function logSongs(item) {
-   
+
     var spotifyAppend = "(********************************** Spotify Song *********************************" + "\n" +
         "The song name: ";
     if (item.name)
@@ -174,7 +211,7 @@ function concertThis(bands) {
             //var dateForm = month + "/" + day + "/" + year;
             //console.log(bandsAppend);
             //console.log(JSON.parse(body));
-            logEvent((JSON.parse(body)));
+            logEvents((JSON.parse(body)));
             //console.log(body);
             fs.appendFile("log.txt", bandsAppend, function (err) {
 
@@ -182,32 +219,30 @@ function concertThis(bands) {
         }
     })
 };
-function logEvent (event) {
-    //console.log(event);
-    for(var i = 0; i < event.length; i++){
-       var dateS = moment(event[i].datetime).format("MM/DD/YYYY"); 
-        //console.log(event.something.something[i])
-       var concerts = "Venue Location: " + event[i].venue.city + "\n";
-       if (event[i].venue.name)
-       concerts = concerts + "Venue Name: " + event[i].venue.name + "\n" ;
-       else 
-       concerts = concerts + "Venue Name: No Venue" + "\n" ;
-      if (dateS)
-       concerts = concerts + "Showing at this date: " + dateS;
-       else
-       concerts = concerts + "Showing at this date: Sorry no show dates available" ;
-       
-       console.log(concerts);
-       fs.appendFile("log.txt", concerts, function (err) {
 
-    });
-        //formatConcertDate();
+function logEvents(event) {
+    //console.log(event);
+    for (var i = 0; i < event.length && i < 1; i++) {
+       
+        logEvent(event[i]);
     }
 }
-// function formatConcertDate() {
-//     var dt = new Date(event[i].datetime);
-//     var month = dt.getUTCMonth() + 1; //months from 1-12
-//     var day = dt.getUTCDate();
-//     var year = dt.getUTCFullYear();
-//     dt = year + "/" + month + "/" + day;
-// }
+
+function logEvent(event) {
+    var dateS = moment(event.datetime).format("MM/DD/YYYY");
+    //console.log(event.something.something[i])
+    var concerts = "Venue Location: " + event.venue.city + "\n";
+    if (event.venue.name)
+        concerts = concerts + "Venue Name: " + event.venue.name + "\n";
+    else
+        concerts = concerts + "Venue Name: No Venue" + "\n";
+    if (dateS)
+        concerts = concerts + "Showing at this date: " + dateS;
+    else
+        concerts = concerts + "Showing at this date: Sorry no show dates available";
+
+    console.log(concerts);
+    fs.appendFile("log.txt", concerts, function (err) {
+
+    });
+};

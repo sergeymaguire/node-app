@@ -1243,4 +1243,223 @@ Showing at this date: 04/01/2019Venue Location: Cologne
 Venue Name: Kulturkirche
 Showing at this date: 04/02/2019Venue Location: Zurich
 Venue Name: Mascotte
-Showing at this date: 04/03/2019
+Showing at this date: 04/03/2019Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Burlington
+Venue Name: Zion I x lespecial
+Showing at this date: 10/20/2018Venue Location: Austin
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/03/2018Venue Location: Durango
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 10/30/2018Venue Location: Sonoma
+Venue Name: Zion I - Hip Hop Halloween Show
+Showing at this date: 10/26/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: Portland
+Venue Name: Star Theater Portland
+Showing at this date: 11/30/2018Venue Location: Seattle
+Venue Name: Nectar Lounge
+Showing at this date: 12/01/2018Venue Location: Eugene
+Venue Name: WildCraft Cider Works
+Showing at this date: 11/29/2018Venue Location: Bend
+Venue Name: Volcanic Theatre Pub
+Showing at this date: 12/04/2018Venue Location: San Diego
+Venue Name: Lyrics Born with Zion I
+Showing at this date: 12/14/2018
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Trainer
+Release Year: 1991–1992
+IMDB Rating: 7.4
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: UK
+Language: English
+Plot: N/A
+Actors: Mark Greenstreet, Susannah York, David McCallum, Floyd Bevan
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Trainer
+Release Year: 1991–1992
+IMDB Rating: 7.4
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: UK
+Language: English
+Plot: N/A
+Actors: Mark Greenstreet, Susannah York, David McCallum, Floyd Bevan
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Trainers
+Release Year: 2015
+IMDB Rating: N/A
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: USA
+Language: English
+Plot: N/A
+Actors: John C. Bailey, John Wells, Richard Spencer, Michael J. Patterson
+********************************************************************************
+
+********************************** MOVIE **********************************
+Title: Trainers
+Release Year: 2015
+IMDB Rating: N/A
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: USA
+Language: English
+Plot: N/A
+Actors: John C. Bailey, John Wells, Richard Spencer, Michael J. Patterson
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Training Day
+Release Year: 2001
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: 72%
+Country movie produced in: USA, Australia
+Language: English, Russian, Spanish, Korean
+Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
+Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Training Day
+Release Year: 2001
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: 72%
+Country movie produced in: USA, Australia
+Language: English, Russian, Spanish, Korean
+Plot: On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the L.A.P.D. with a rogue detective who isn't what he appears to be.
+Actors: Denzel Washington, Ethan Hawke, Scott Glenn, Tom Berenger
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Pulp Fiction
+Release Year: 1994
+IMDB Rating: 8.9
+Rotten Tomatoes Rating: 94%
+Country movie produced in: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+********************************************************************************
+
+**********************************Sorry NO MOVIE**********************************
+OMDB could not find any movies that matched that title.  Please try again.
+********************************************************************************
+Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: San Diego
+Venue Name: Waterfront Park
+Showing at this date: 10/20/2018Venue Location: Huntington Beach
+Venue Name: Huntington State Beach
+Showing at this date: 10/27/2018Venue Location: Sf
+Venue Name: The Regency Ballroom
+Showing at this date: 11/29/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Durango
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 10/30/2018Venue Location: Sonoma
+Venue Name: Zion I - Hip Hop Halloween Show
+Showing at this date: 10/26/2018Venue Location: Austin
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/03/2018Venue Location: San Antonio
+Venue Name: The 5th Annual Slap Frost Tour
+Showing at this date: 11/04/2018Venue Location: Eugene
+Venue Name: WildCraft Cider Works
+Showing at this date: 11/29/2018Venue Location: Portland
+Venue Name: Star Theater Portland
+Showing at this date: 11/30/2018Venue Location: Seattle
+Venue Name: Nectar Lounge
+Showing at this date: 12/01/2018Venue Location: Bend
+Venue Name: Volcanic Theatre Pub
+Showing at this date: 12/04/2018Venue Location: Burlington
+Venue Name: Zion I x lespecial
+Showing at this date: 10/20/2018Venue Location: San Diego
+Venue Name: Lyrics Born with Zion I
+Showing at this date: 12/14/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Burlington
+Venue Name: Zion I x lespecial
+Showing at this date: 10/20/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018Venue Location: Manchester
+Venue Name: Zion I x lespecial
+Showing at this date: 10/19/2018
