@@ -27,10 +27,6 @@ if (process.argv[3] !== undefined) {
     };
 };
 
-// fs.readFile('random.txt', "utf8", function(err, data) {
-//     console.log(data)
-// });
-
 
 switch (action) {
     case 'concert-this':
@@ -54,7 +50,11 @@ switch (action) {
         break;
 
     case "do-what-it-says":
-        doWhatItSays(param, keys);
+        var command = "movie";
+        if (process.argv[3] !== undefined) {
+            command = process.argv[3];
+        }
+        doWhatItSays(command);
         break;
 };
 
@@ -132,9 +132,9 @@ function logMovie(data) {
 }
 
 function spotifyThis(song) {
-    if(!song.includes("'") && !song.includes('"'))
+    if (!song.includes("'") && !song.includes('"'))
         song = "'" + song + "'";
-        
+
     console.log("spotifyThis: " + song);
     spotify.search({
         type: 'track',
@@ -202,25 +202,26 @@ function logSongs(item) {
 }
 
 function concertThis(bands) {
+    bands = stripEndQuotes(bands);
     console.log(bands);
     var bandsAppend = "";
     var queryURL = "https://rest.bandsintown.com/artists/" + bands.trim() + "/events?app_id=12677f5a7f6ea3d8f4ed813de5bf152e"
     request(queryURL, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            
+
             try {
                 var body = JSON.parse(body);
-            } catch(e) {
+            } catch (e) {
                 console.log("No concert found: " + bands); // error in the above string (in this case, yes)!
                 return;
             }
-            if (body.events && body.events.length) {
-                logEvents();
+            if (body && body.length) {
+                logEvents(body);
                 //console.log(body);
                 fs.appendFile("log.txt", bandsAppend, function (err) {
 
                 });
-            }else {
+            } else {
                 console.log("no concert found");
             }
         }
@@ -253,20 +254,26 @@ function logEvent(event) {
 
     });
 };
-function doWhatItSays() {
-    
-	// Asynchronously read the file random.txt. Throw error if file does not exist 
-	fs.readFile('random.txt', (error, data) => {
-		if (error) {
-			throw error
-		};
 
-		// Data is an buffer. Conver to string and split on the comma to create an array
-		var randomTxt = data.toString().split(',');
-		// the command is index 0
-		var command = randomTxt[0];
-		// the argument is index 1
-        var handle_song_movie = randomTxt[1];
-        spotifyThis(handle_song_movie);
-	});
+function doWhatItSays(command) {
+    fs.readFile('random.txt', (error, data) => {
+        if (error) {
+            throw error
+        };
+        var randomTxt = data.toString().split(',');
+        var searchText = randomTxt[1];
+        if (command === "concert")
+            concertThis(searchText);
+        else
+        if (command === "song")
+            spotifyThis(searchText);
+        else
+            movie(searchText);
+    });
+}
+function stripEndQuotes(s){
+	var t=s.length;
+	if (s.charAt(0)=='"') s=s.substring(1,t--);
+	if (s.charAt(--t)=='"') s=s.substring(0,t);
+	return s;
 }

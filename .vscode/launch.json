@@ -22,7 +22,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}\\liri.js",
             "args": [
-              "do-what-it-says"
+              "concert-this",
+              "zion i"
               
               
                 ]
