@@ -179,10 +179,10 @@ function concertThis(bands) {
 };
 function logEvent (event) {
     //console.log(event);
-    for(var i = 0; i < event.length; i++){
-        console.log(event[i])
+    for(var i = 2 ; i < event.length; i++){
+        // console.log(event[i])
         //console.log(event.something.something[i])
-        console.log("hiell")
+        console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name);
         
     }
 }
