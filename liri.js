@@ -6,6 +6,7 @@ function helpMenu() {
 helpMenu();
 const fs = require("fs");
 var request = require("request"),
+    moment = require("moment"),
     keys = require("./keys.js"),
     Spotify = require('node-spotify-api'),
     spotify = new Spotify({
@@ -183,15 +184,19 @@ function concertThis(bands) {
 };
 function logEvent (event) {
     //console.log(event);
-    for(var i = 0 ; i < event.length; i++){
-        var dt = new Date(event[i].datetime);
-        var month = dt.getUTCMonth() + 1; //months from 1-12
-        var day = dt.getUTCDate();
-        var year = dt.getUTCFullYear();
-        dt = day + "/" + month + "/" + year;
-        console.log(event)
+    for(var i = 0; i < event.length; i++){
+       var dateS = moment(event[i].datetime).format("MM/DD/YYYY"); 
         //console.log(event.something.something[i])
-       var concerts = console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name + "\n" + "Showing at this date: " + dt);
+       var concerts = "Venue Location: " + event[i].venue.city + "\n";
+       if (event[i].venue.name)
+       concerts = concerts + "Venue Name: " + event[i].venue.name + "\n" ;
+       else 
+       concerts = concerts + "Venue Name: No Venue" + "\n" ;
+      if (dateS)
+       concerts = concerts + "Showing at this date: " + dateS;
+       else
+       concerts = concerts + "Showing at this date: Sorry no show dates available" ;
+       
        console.log(concerts);
        fs.appendFile("log.txt", concerts, function (err) {
 
