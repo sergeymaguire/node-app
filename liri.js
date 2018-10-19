@@ -26,9 +26,9 @@ if (process.argv[3] !== undefined) {
     };
 };
 
-fs.readFile('random.txt', "utf8", function(err, data) {
-    console.log(data)
-});
+// fs.readFile('random.txt', "utf8", function(err, data) {
+//     console.log(data)
+// });
 
 
 switch (action) {
@@ -183,9 +183,21 @@ function concertThis(bands) {
 function logEvent (event) {
     //console.log(event);
     for(var i = 0 ; i < event.length; i++){
-        // console.log(event[i])
+        var dt = new Date(event[i].datetime);
+        var month = dt.getUTCMonth() + 1; //months from 1-12
+        var day = dt.getUTCDate();
+        var year = dt.getUTCFullYear();
+        dt = day + "/" + month + "/" + year;
+        console.log(event)
         //console.log(event.something.something[i])
-        console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name);
-        
+        console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name + "\n" + "Show at this date: " + dt);
+        //formatConcertDate();
     }
 }
+// function formatConcertDate() {
+//     var dt = new Date(event[i].datetime);
+//     var month = dt.getUTCMonth() + 1; //months from 1-12
+//     var day = dt.getUTCDate();
+//     var year = dt.getUTCFullYear();
+//     dt = year + "/" + month + "/" + day;
+// }
