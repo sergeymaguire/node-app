@@ -34,7 +34,7 @@ fs.readFile('random.txt', "utf8", function(err, data) {
 switch (action) {
     case 'concert-this':
         if (!param || param.length < 2) {
-            param = "zion i";
+            param = "rancid";
         }
         concertThis(param);
         break;
@@ -53,6 +53,9 @@ switch (action) {
         break;
 
     case "do-what-it-says":
+    movie();
+    spotifyThis();
+    concertThis();
         //doIt();
         break;
 };
@@ -179,7 +182,7 @@ function concertThis(bands) {
 };
 function logEvent (event) {
     //console.log(event);
-    for(var i = 2 ; i < event.length; i++){
+    for(var i = 0 ; i < event.length; i++){
         // console.log(event[i])
         //console.log(event.something.something[i])
         console.log("Venue Location: " + event[i].venue.city + "\n" + "Venue Name: " + event[i].venue.name);
