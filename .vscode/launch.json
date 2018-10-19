@@ -22,8 +22,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}\\liri.js",
             "args": [
-              "concert-this",
-              "Rancid"
+              "do-what-it-says"
+              
               
                 ]
             

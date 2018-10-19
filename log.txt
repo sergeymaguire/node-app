@@ -1462,4 +1462,20 @@ Showing at this date: 10/19/2018Venue Location: Manchester
 Venue Name: Zion I x lespecial
 Showing at this date: 10/19/2018Venue Location: Manchester
 Venue Name: Zion I x lespecial
-Showing at this date: 10/19/2018
+Showing at this date: 10/19/2018Venue Location: San Diego
+Venue Name: Waterfront Park
+Showing at this date: 10/20/2018(********************************** Spotify Song *********************************
+The song name: I Want It That Way
+Album name: The Hits--Chapter One
+Popularity of the song: 80
+Song preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: No artist 
+*********************************************************************************)(********************************** Spotify Song *********************************
+The song name: Ace of Spades
+Album name: Ace of Spades (Expanded Edition)
+Popularity of the song: 74
+Song preview: https://p.scdn.co/mp3-preview/cf51f8a8f917601f32cd5574b897daa68f53471b?cid=ada3a8a5d341447a8acba938aef731da
+Track number: 1
+Song's Artist: No artist 
+*********************************************************************************)
